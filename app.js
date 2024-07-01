@@ -20,3 +20,14 @@ document.getElementById('darkModeToggle').addEventListener('click', function() {
         this.textContent = 'Toggle Dark Mode';
     }
 });
+
+// image error handling
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+
+    images.forEach(img => {
+        img.onerror = function() {
+            this.classList.add('error');
+        };
+    });
+});

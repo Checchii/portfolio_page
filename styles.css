@@ -13,6 +13,15 @@ body {
     padding: 0;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode h2 {
+    color: inherit; /* Ensure h2 elements inherit the text color */
+}
+
 /* Header styling */
 header {
     background-color: #333;
@@ -36,7 +45,6 @@ header {
 #navbar ul {
     list-style-type: none;
     display: flex;
-    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -72,11 +80,6 @@ body.dark-mode #darkModeToggle {
     color: #333;
 }
 
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
 .dark-mode button {
     background-color: #333333;
     color: #ffffff;
@@ -97,6 +100,10 @@ main {
     margin-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #about-me {
+    background-color: #222;
 }
 
 #about-me img {
@@ -132,10 +139,18 @@ main {
     margin-bottom: 1rem;
 }
 
+body.dark-mode .about-me-text-container h1 {
+    color: #fff;
+}
+
 .about-me-text-container p {
     font-size: 1.1rem;
     color: #666;
     line-height: 1.8;
+}
+
+body.dark-mode .about-me-text-container p {
+    color: #ddd;
 }
 
 /* Projects section styling */
@@ -145,6 +160,10 @@ main {
     margin-bottom: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #projects {
+    background-color: #222;
 }
 
 #projects h2 {
@@ -160,7 +179,7 @@ summary {
     display: block;
     cursor: pointer;
     position: relative;
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
 details summary::before {
@@ -186,6 +205,10 @@ details[open] summary::before {
     color: #1c1c1c;
 }
 
+body.dark-mode .project-title {
+    color: #ccc;
+}
+
 .project-title:hover {
     color: #1f1f83;
 }
@@ -194,6 +217,10 @@ details[open] summary::before {
     font-size: 1.1rem;
     color: #666;
     margin-top: 0.5rem;
+}
+
+body.dark-mode .project-description {
+    color: #ddd;
 }
 
 .project-image {
@@ -213,9 +240,17 @@ details[open] summary::before {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+body.dark-mode #skills {
+    background-color: #222;
+}
+
 #skills-container {
     font-size: 3rem;
     color: #4d4d4f;
+}
+
+body.dark-mode #skills-container {
+    color: #ddd;
 }
 
 #skills-container i {
@@ -231,4 +266,22 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Handle image load failures */
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+img.error {
+    display: none;
+}
+
+img.error::before {
+    content: attr(alt);
+    display: block;
+    color: inherit;
+    text-align: center;
 }
