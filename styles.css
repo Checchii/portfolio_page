@@ -120,6 +120,7 @@ main {
 
 details {
     display: block;
+    position: relative;
 }
 
 summary {
@@ -129,17 +130,17 @@ summary {
     padding-left: 20px; 
 }
 
-summary::before {
-    content: '';
-    position: absolute; 
-    top: 50%; 
-    left: 0; 
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent; 
-    border-bottom: 5px solid transparent; 
-    border-left: 8px solid black; 
-    transform: translateY(-50%); 
+details summary::before {
+    content: "▶";
+    font-size: 16px;
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
 }
 
 .project {
