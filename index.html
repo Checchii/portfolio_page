@@ -10,10 +10,9 @@
     <header>
         <nav id="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="mailto:sebastian.checchi@gmail.com?subject=Hello%20from%20Your%20Portfolio&body=Hi%20Sebastian,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards,">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -24,14 +23,11 @@
                 <div class="about-me-text-container">
                     <h1>About Me:</h1>
                     <p>
-                        Hi! I'm Sebastian Checchi. I hold a master's degree in Computer Science from Mercy University.
-                        I am currently learning full-stack development from Codecademy. On my free time I enjoy working out, 
-                        going to the beach and programming. I aspire to one day work as a software engineer and develop fun, challenging
-                        projects!
+                        Hi! I'm Sebastian Checchi, a passionate developer with a background in Computer Science and a keen interest in full-stack development. I enjoy creating interactive web applications and exploring new technologies. When I'm not coding, you can find me working out, enjoying the beach, or diving into new programming challenges.
                     </p>
                 </div>
 
-                <img src="">
+                <img src="/images/me.jpeg" alt="A photo of me!">
 
             </div>
 
@@ -43,7 +39,10 @@
                 <summary class="project-title">
                     <h3>Dungeons of Aria</h3>
                 </summary>
-                <img src="" alt="Screenshot of Dungeons of Aria game play" class="project-image">
+                <video width="640" height="360" controls autoplay>
+                    <source src="/images/dungeonsofaria.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <p class="project-description">"Dungeons of Aria" is a fantasy RPG where players explore dungeons, solve puzzles, and engage in strategic combat.</p>
             </details>
             <details class="project">
@@ -56,13 +55,14 @@
                 <summary class="project-title">
                     <h3>Any City Weather App</h3>
                 </summary>
-                <img src="" alt="Screenshot of Weather App displaying forecast" class="project-image">
-                <p class="project-description">Contributed to the development of a weather application by leveraging my Python skills through the respective framework Flask. The back-end made calls to the Weather API to display a 5 day forecast for any city the user input.</p>
+                <img src="/images/any-city-weather-app.png" alt="Screenshot of Weather App displaying forecast" class="project-image">
+                <p class="project-description">Contributed to the development of a weather application by leveraging my Python skills through the respective framework Flask. The back-end made calls to the Weather API to display the forecast for any city the user input.</p>
             </details>
             <details class="project">
                 <summary class="project-title">
                     <h3>Case Closed</h3>
                 </summary>
+                <img src="/images/case-closed.jpg" alt="Photo of Case Closed 3D RPG" class="project-image">
                 <p class="project-description">Drawing inspiration from the Sherlock Holmes stories I set out to develop a crime solving game in Unity. Over the course of a few months I learned a lot but also faced some challenges. I learned some of the Unity functionalities and also learned that 3D Modeling with Blender proved to be a demanding task.</p>
             </details>
         </section>
@@ -70,17 +70,17 @@
         <section id="skills">
             <h2>Skills:</h2>
             <div id="skills-container">
-                <i class="html-5"></i>
-                <i class="css-3"></i>
-                <i class="javascript"></i>
-                <i class="python"></i>
-                <i class="git"></i>
-                <i class="github"></i>
-                <i class="chrome"></i>
-                <i class="terminal"></i>
-                <i class="sql"></i>
-                <i class="php"></i>
-                <i class="r"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-python"></i>
+                <i class="fa-brands fa-git-alt"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-chrome"></i>
+                <i class="fa-solid fa-terminal"></i>
+                <i class="fa-solid fa-database"></i>
+                <i class="fa-solid fa-r"></i>
+                <i class="fa-brands fa-php"></i>
             </div>
         </section>
     </main>
@@ -89,5 +89,6 @@
         <p>&copy; 2024 Sebastian Checchi. All rights reserved.</p>
     </footer>
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/82c814fb9b.js" crossorigin="anonymous"></script>
 </body>
 </html>
