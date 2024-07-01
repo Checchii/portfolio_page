@@ -25,18 +25,24 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-    z-index: 1000; /* Ensure it is above other content */
+    background-color: #0d0d26;
+    padding: 20px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navbar ul {
     list-style-type: none;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar ul li {
-    display: inline;
-    margin-right: 1rem;
+    margin: 0 20px;
 }
 
 #navbar ul li a {
@@ -50,6 +56,32 @@ header {
     background-color: #555;
 }
 
+#darkModeToggle {
+    position: absolute;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #ddd;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #333333;
+    color: #ffffff;
+}
+
 /* Main section styling */
 main {
     max-width: 900px;
@@ -61,6 +93,7 @@ main {
 #about-me {
     background-color: #fff;
     padding: 2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -154,7 +187,7 @@ details[open] summary::before {
 }
 
 .project-title:hover {
-    color: #3942c1;
+    color: #1f1f83;
 }
 
 .project-description {
@@ -191,7 +224,7 @@ details[open] summary::before {
 
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color: #0d0d26;
     color: white;
     text-align: center;
     padding: 1rem 0;
