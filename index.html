@@ -14,7 +14,9 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="mailto:sebastian.checchi@gmail.com?subject=Hello%20from%20Your%20Portfolio&body=Hi%20Sebastian,%0D%0A%0D%0AI%20visited%20your%20portfolio%20and%20wanted%20to%20get%20in%20touch.%0D%0A%0D%0ABest%20regards,">Contact Me</a></li>
             </ul>
-            <button id="darkModeToggle">Toggle Dark Mode</button>
+            <button id="darkModeToggle">
+                <i class="fa-regular fa-moon"></i>
+            </button>
         </nav>
     </header>
 
@@ -68,24 +70,44 @@
         <section id="skills">
             <h2>Skills:</h2>
             <div id="skills-container">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-python"></i>
-                <i class="fa-brands fa-git-alt"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-chrome"></i>
-                <i class="fa-solid fa-terminal"></i>
-                <i class="fa-solid fa-database"></i>
-                <i class="fa-solid fa-r"></i>
-                <i class="fa-brands fa-php"></i>
+                <i class="fa-brands fa-html5" title="HTML5"></i>
+                <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-python" title="Python"></i>
+                <i class="fa-brands fa-git-alt" title="Git"></i>
+                <i class="fa-brands fa-github" title="GitHub"></i>
+                <i class="fa-brands fa-chrome" title="Chrome"></i>
+                <i class="fa-solid fa-terminal" title="Terminal"></i>
+                <i class="fa-solid fa-database" title="SQL"></i>
+                <i class="fa-solid fa-r" title="R"></i>
+                <i class="fa-brands fa-php" title="PHP"></i>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Sebastian Checchi. All rights reserved.</p>
+    <footer id="footer" class="hidden">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:sebastian.checchi@gmail.com">sebastian.checchi@gmail.com</a></p>
+            </div>
+            <div class="footer-social">
+                <h3>Find Me On:</h3>
+                <ul class="footer-social">
+                    <li><a href="https://www.linkedin.com/in/sebastian-checchi/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.instagram.com/checchii__/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/Checchii" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/82c814fb9b.js" crossorigin="anonymous"></script>
 </body>
