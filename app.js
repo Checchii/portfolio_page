@@ -44,16 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Footer visibility
+// footer visibility
 document.addEventListener('DOMContentLoaded', () => {
     const footer = document.getElementById('footer');
-    const lastSection = document.querySelector('section:last-of-type');
+    const skillsSection = document.getElementById('skills');
 
     function checkScrollPosition() {
-        const lastSectionRect = lastSection.getBoundingClientRect();
+        const skillsSectionRect = skillsSection.getBoundingClientRect();
         const footerHeight = footer.offsetHeight;
 
-        if (lastSectionRect.bottom <= window.innerHeight + footerHeight) {
+        // Check if the bottom of the skills section is within the viewport
+        if (skillsSectionRect.bottom <= window.innerHeight) {
             footer.classList.remove('hidden');
         } else {
             footer.classList.add('hidden');
@@ -63,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', checkScrollPosition);
     window.addEventListener('resize', checkScrollPosition);
 
-    // Initial check
+
     checkScrollPosition();
 });
 
