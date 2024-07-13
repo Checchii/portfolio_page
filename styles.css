@@ -454,7 +454,7 @@ img.error::before {
     }
 
     #passions {
-        margin-top: 10rem;
+        margin-top: 20rem;
     }
 
     #darkModeToggle {
@@ -499,7 +499,7 @@ img.error::before {
 
     #skills {
         padding: 1.5rem; /* Adjust padding for smaller screens */
-        margin-bottom: 30rem;
+        margin-bottom: 40rem;
     }
 
     #skills-container {

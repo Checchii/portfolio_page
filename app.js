@@ -49,25 +49,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const footer = document.getElementById('footer');
     const skillsSection = document.getElementById('skills');
 
-    function checkScrollPosition() {
-        const skillsSectionRect = skillsSection.getBoundingClientRect();
-        const footerHeight = footer.offsetHeight;
+    function checkFooterVisibility() {
+        const skillsRect = skillsSection.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const scrollPosition = window.scrollY;
 
-        // Check if the skills section is fully visible in the viewport
-        if (skillsSectionRect.top >= 0 && skillsSectionRect.bottom <= window.innerHeight) {
+        // Calculate the position where the footer should appear
+        const footerTriggerPosition = skillsRect.bottom - (viewportHeight / 2);
+
+        if (scrollPosition > footerTriggerPosition) {
             footer.classList.remove('hidden');
         } else {
             footer.classList.add('hidden');
         }
     }
 
-    window.addEventListener('scroll', checkScrollPosition);
-    window.addEventListener('resize', checkScrollPosition);
+    window.addEventListener('scroll', checkFooterVisibility);
+    window.addEventListener('resize', checkFooterVisibility);
 
-
-    checkScrollPosition();
+    // Initial check
+    checkFooterVisibility();
 });
-
 // Passion list functionality
 document.addEventListener('DOMContentLoaded', () => {
     const passionsText = document.getElementById('passions-text');
