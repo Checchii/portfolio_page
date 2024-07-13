@@ -51,6 +51,7 @@ header {
 
 #navbar ul li {
     margin: 0 20px;
+    padding: 0 15px;
 }
 
 #navbar ul li a {
@@ -78,6 +79,7 @@ header {
 body.dark-mode #darkModeToggle {
     background-color: #ddd;
     color: #333;
+    z-index: 1001;
 }
 
 .dark-mode button {
@@ -340,10 +342,14 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    display: block;
+    display: none;
     opacity: 1;
     transform: translateY(0);
     transition: opacity 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), transform 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Custom timing */
+}
+
+footer:not(.hidden) {
+    display: block;
 }
 
 #footer.hidden {
@@ -452,6 +458,10 @@ img.error::before {
         width: 100%; /* Make the image responsive */
         max-width: 100%;
         margin-top: 20px;
+    }
+
+    details summary::before {
+        content: none !important; /* Remove emoji arrow */
     }
 
     #projects {

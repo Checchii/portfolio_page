@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const skillsSectionRect = skillsSection.getBoundingClientRect();
         const footerHeight = footer.offsetHeight;
 
-        // Check if the bottom of the skills section is within the viewport
-        if (skillsSectionRect.bottom <= window.innerHeight) {
+        // Check if the skills section is fully visible in the viewport
+        if (skillsSectionRect.top >= 0 && skillsSectionRect.bottom <= window.innerHeight) {
             footer.classList.remove('hidden');
         } else {
             footer.classList.add('hidden');
