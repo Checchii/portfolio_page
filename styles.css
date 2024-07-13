@@ -453,6 +453,10 @@ img.error::before {
         padding: 1rem; /* Adjust padding for smaller screens */
     }
 
+    #passions {
+        margin-top: 2rem;
+    }
+
     #darkModeToggle {
         display: none; /* Hide toggle button on smaller screens if necessary */
     }
@@ -495,6 +499,7 @@ img.error::before {
 
     #skills {
         padding: 1.5rem; /* Adjust padding for smaller screens */
+        margin-bottom: 10rem;
     }
 
     #skills-container {
@@ -526,4 +531,6 @@ img.error::before {
     .footer-social ul li {
         margin: 0 10px; /* Adjust margin between social icons */
     }
+
+
 }
