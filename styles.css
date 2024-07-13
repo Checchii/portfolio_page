@@ -436,3 +436,65 @@ img.error::before {
     color: inherit;
     text-align: center;
 }
+
+/* Phone screen sizes */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .about-me-container {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        align-items: center;
+    }
+
+    #about-me img {
+        width: 100%; /* Make the image responsive */
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    #projects {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    #projects video {
+        width: 100%; /* Make the video responsive */
+        height: auto; /* Ensure aspect ratio is maintained */
+    }
+
+    #projects h2 {
+        font-size: 1.8rem; /* Decrease font size for smaller screens */
+    }
+
+    .project-title {
+        font-size: 1.1rem; /* Adjust project title font size */
+    }
+
+    .project-description {
+        font-size: 1rem; /* Adjust project description font size */
+    }
+
+    #skills {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    #skills-container {
+        font-size: 2rem; /* Decrease icon size for smaller screens */
+    }
+
+    .footer-container {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center;
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .footer-nav ul li {
+        margin-right: 0; /* Remove margin between footer nav items */
+        margin-bottom: 10px; /* Add space between footer nav items */
+    }
+
+    .footer-social ul li {
+        margin: 0 10px; /* Adjust margin between social icons */
+    }
+}
