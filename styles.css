@@ -85,6 +85,34 @@ body.dark-mode #darkModeToggle {
     color: #ffffff;
 }
 
+/* Passions Section Styles */
+#passions {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode #passions {
+    background-color: #222;
+}
+
+#passions h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#passions span {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+body.dark-mode #passions span {
+    color: #ddd;
+}
+
 /* Main section styling */
 main {
     max-width: 900px;

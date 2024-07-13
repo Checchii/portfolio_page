@@ -66,3 +66,45 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial check
     checkScrollPosition();
 });
+
+// Passion list functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const passionsText = document.getElementById('passions-text');
+    const passions = [
+        "software engineering",
+        "full-stack development",
+        "exploring new technologies",
+        "solving problems",
+        "learning new things",
+        "working out",
+        "nutrition",
+    ];
+    let currentPassionIndex = 0;
+    let charIndex = 0;
+    const typingSpeed = 100; // Speed of typing in milliseconds
+    const delayBetweenPassions = 2000; // Delay between each passion
+
+    function typePassion() {
+        if (charIndex < passions[currentPassionIndex].length) {
+            passionsText.innerHTML += passions[currentPassionIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typePassion, typingSpeed);
+        } else {
+            setTimeout(erasePassion, delayBetweenPassions);
+        }
+    }
+
+    function erasePassion() {
+        if (charIndex > 0) {
+            passionsText.innerHTML = passions[currentPassionIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erasePassion, typingSpeed);
+        } else {
+            currentPassionIndex = (currentPassionIndex + 1) % passions.length;
+            setTimeout(typePassion, typingSpeed);
+        }
+    }
+
+    // Initial call to start the typing effect
+    typePassion();
+});
