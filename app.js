@@ -79,8 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
         "exploring new technologies",
         "solving problems",
         "learning new things",
-        "working out",
-        "nutrition",
+        "reading",
+        "traveling",
     ];
     let currentPassionIndex = 0;
     let charIndex = 0;
