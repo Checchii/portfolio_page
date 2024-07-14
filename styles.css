@@ -38,8 +38,9 @@ header {
     padding: 20px 0;
     z-index: 1000;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 #navbar ul {
@@ -50,10 +51,8 @@ header {
 }
 
 #navbar ul li {
-    margin: 0 15px; /* Adjusted from 20px to 15px */
-    position: relative; /* Ensure relative positioning for child elements */
+    margin: 0 20px;
 }
-
 
 #navbar ul li a {
     color: white;
@@ -67,15 +66,13 @@ header {
 }
 
 #darkModeToggle {
-    position: absolute;
-    right: 20px;
-    top: 10px;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     background-color: #333;
     color: #fff;
     border-radius: 5px;
+    margin-left: auto;
 }
 
 
