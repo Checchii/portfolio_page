@@ -68,7 +68,6 @@ header {
 
 #darkModeToggle {
     position: absolute;
-    top: calc(100% + 10px); /* Position 10px below the nav bar */
     right: 20px;
     padding: 10px 15px;
     border: none;

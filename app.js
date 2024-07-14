@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial check
     checkFooterVisibility();
 });
+
 // Passion list functionality
 document.addEventListener('DOMContentLoaded', () => {
     const passionsText = document.getElementById('passions-text');
