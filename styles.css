@@ -245,13 +245,29 @@ body.dark-mode .project-title {
 }
 
 .project-title:hover {
-    color: #1f1f83;
+    color: #7c46ba;
 }
 
 .project-description {
     font-size: 1.1rem;
     color: #666;
     margin-top: 0.5rem;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #422662;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 14%;
+}
+
+.button:hover {
+    background-color: #8c3b94;
 }
 
 body.dark-mode .project-description {
