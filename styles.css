@@ -205,6 +205,27 @@ body.dark-mode #projects {
     margin-bottom: 1.5rem;
 }
 
+.project h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.project ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Adjust the padding to shift bullet points to the right */
+}
+
+.project ul li {
+    margin-bottom: 5px;
+    padding-left: 10px; /* Additional padding to further shift the bullet points */
+}
+
+.project p,
+.project ul li {
+    color: #111111; /* Set the same color for <p> and <li> elements */
+}
+
 details {
     display: block;
     position: relative;
