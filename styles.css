@@ -285,10 +285,23 @@ body.dark-mode .project-title {
     border-radius: 10px;
     transition: background-color 0.3s ease;
     width: 14%;
+    max-width: 200px;
+    min-width: 80px;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 .button:hover {
     background-color: #8c3b94;
+}
+
+/* Media query for button */
+@media (max-width: 768px) {
+    .button {
+        width: 30%;
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
 }
 
 body.dark-mode .project-description {
@@ -564,6 +577,7 @@ img.error::before {
     .footer-nav ul li {
         margin-right: 0; /* Remove margin between footer nav items */
         margin-bottom: 10px; /* Add space between footer nav items */
+        padding: 20px;
     }
 
     .footer-social ul li {
